@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "lll",
+    "lcl",
+    "lll"
+  ],
+  "key": {
+    "l": {
+      "item": "minecraft:leather"
+    },
+    "c": [
+      {
+        "item": "minecraft:chest"
+      }
+    ]
+  },
+  "result": {
+    "item": "skbackpacks:backpack",
+    "count": 1
+  }
+}
