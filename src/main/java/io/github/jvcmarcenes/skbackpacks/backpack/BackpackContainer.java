@@ -1,6 +1,6 @@
-package io.github.jvcmarcenes.effetewood.backpack;
+package io.github.jvcmarcenes.skbackpacks.backpack;
 
-import io.github.jvcmarcenes.effetewood.init.ModContainerTypes;
+import io.github.jvcmarcenes.skbackpacks.init.ModContainerTypes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;

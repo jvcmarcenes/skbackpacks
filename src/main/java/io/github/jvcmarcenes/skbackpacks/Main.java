@@ -1,11 +1,9 @@
-package io.github.jvcmarcenes.effetewood;
+package io.github.jvcmarcenes.skbackpacks;
 
-import io.github.jvcmarcenes.effetewood.init.*;
-import net.minecraft.item.*;
+import io.github.jvcmarcenes.skbackpacks.init.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

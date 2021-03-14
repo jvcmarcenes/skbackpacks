@@ -1,8 +1,8 @@
-package io.github.jvcmarcenes.effetewood.init;
+package io.github.jvcmarcenes.skbackpacks.init;
 
-import io.github.jvcmarcenes.effetewood.Main;
-import io.github.jvcmarcenes.effetewood.backpack.BackpackContainer;
-import io.github.jvcmarcenes.effetewood.client.gui.BackpackScreen;
+import io.github.jvcmarcenes.skbackpacks.Main;
+import io.github.jvcmarcenes.skbackpacks.backpack.BackpackContainer;
+import io.github.jvcmarcenes.skbackpacks.client.gui.BackpackScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
@@ -10,7 +10,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.loading.FMLClientLaunchProvider;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 

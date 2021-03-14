@@ -1,4 +1,4 @@
-package io.github.jvcmarcenes.effetewood.backpack;
+package io.github.jvcmarcenes.skbackpacks.backpack;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.ItemStackHandler;

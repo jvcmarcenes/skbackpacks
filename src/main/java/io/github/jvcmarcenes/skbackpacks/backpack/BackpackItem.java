@@ -1,7 +1,7 @@
-package io.github.jvcmarcenes.effetewood.backpack;
+package io.github.jvcmarcenes.skbackpacks.backpack;
 
-import io.github.jvcmarcenes.effetewood.Main;
-import io.github.jvcmarcenes.effetewood.init.ModItems;
+import io.github.jvcmarcenes.skbackpacks.Main;
+import io.github.jvcmarcenes.skbackpacks.init.ModItems;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
