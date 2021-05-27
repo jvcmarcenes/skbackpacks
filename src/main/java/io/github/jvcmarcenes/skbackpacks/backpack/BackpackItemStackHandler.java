@@ -15,8 +15,6 @@ public class BackpackItemStackHandler extends ItemStackHandler {
         if (slot < 0 || slot >= NUMBER_SLOTS)
             throw new IllegalArgumentException("Invalid slot number: " + slot);
 
-        if (stack.isEmpty()) return false;
-
-        return !(stack.getItem() instanceof BackpackItem);
+        return !stack.isEmpty() && !(stack.getItem() instanceof BackpackItem);
     }
 }

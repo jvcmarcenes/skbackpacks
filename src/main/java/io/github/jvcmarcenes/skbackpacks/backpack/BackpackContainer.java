@@ -35,9 +35,9 @@ public class BackpackContainer extends Container {
 
         // Player Inventory slots
         for (int row = 0; row < 3; row++) for (int column = 0; column < 9; column++)
-            this.addSlot(new Slot(playerInv, 9 + (row * 9) + column, 8 + (column * 18), 84 + (row * 18)));
+            this.addSlot(new Slot(playerInv, 9 + row * 9 + column, 8 + column * 18, 84 + row * 18));
         for (int column = 0; column < 9; column++)
-            this.addSlot(new Slot(playerInv, column, 8 + (column * 18), 84 + 18 * 3 + 4));
+            this.addSlot(new Slot(playerInv, column, 8 + column * 18, 84 + 18 * 3 + 4));
     }
 
     @Override
@@ -50,10 +50,10 @@ public class BackpackContainer extends Container {
         ItemStack slotStack = slot.getStack();
         stack = slotStack.copy();
 
-        if (index >= backpackItemStackHandler.getSlots())
+        if (index >= backpackItemStackHandler.getSlots()) {
             if (!mergeItemStack(slotStack, 0, backpackItemStackHandler.getSlots(), false))
                 return ItemStack.EMPTY;
-        else if (!mergeItemStack(slotStack, backpackItemStackHandler.getSlots(), inventorySlots.size(), false))
+        } else if (!mergeItemStack(slotStack, backpackItemStackHandler.getSlots(), inventorySlots.size(), false))
             return ItemStack.EMPTY;
 
         if (slotStack.isEmpty()) slot.putStack(ItemStack.EMPTY);

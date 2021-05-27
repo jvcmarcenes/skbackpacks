@@ -17,16 +17,14 @@ public class BackpackCapabilityProvider implements ICapabilitySerializable<INBT>
     @Nonnull
     private BackpackItemStackHandler getCachedInventory() {
         if (backpackItemStackHandler == null) backpackItemStackHandler = new BackpackItemStackHandler();
-
         return backpackItemStackHandler;
     }
 
-    private final LazyOptional<IItemHandler> lazyInitialisationSupplier = LazyOptional.of(this::getCachedInventory);
+    private final LazyOptional<IItemHandler> lazyInventory = LazyOptional.of(this::getCachedInventory);
 
-    @Nonnull
-    @Override
+    @Nonnull @Override
     public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, Direction side) {
-        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (LazyOptional<T>)(lazyInitialisationSupplier);
+        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (LazyOptional<T>)(lazyInventory);
 
         return LazyOptional.empty();
     }
